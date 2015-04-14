@@ -30,12 +30,12 @@ public class SettingScreen extends Screen {
 
     private void showInputs() {
         final RelativeLayout summonerLayout = (RelativeLayout) MethodManager.getInstance().getLayoutInflater().inflate(R.layout.summoner_input, null);
-        Spinner spinner = (Spinner) summonerLayout.findViewById(R.id.spinner);
+//        Spinner spinner = (Spinner) summonerLayout.findViewById(R.id.spinner);
         final EditText summonerInput = (EditText) summonerLayout.findViewById(R.id.summoner_name_input);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(MethodManager.getInstance(), R.array.realm_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(MethodManager.getInstance(), R.array.realm_array, android.R.layout.simple_spinner_item);
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        spinner.setAdapter(adapter);
 
         SharedPreferences settings = MethodManager.getInstance().getSharedPreferences(MethodManager.getInstance().getString(R.string.app_name), 0);
         String summoner = settings.getString("SUMMONER", null);
