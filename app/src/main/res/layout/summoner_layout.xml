@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" >
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/champion_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Summoner Name"
+        android:id="@+id/summoner_name"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/champion_logo"
+        android:layout_toLeftOf="@+id/spell1"
+        android:layout_toStartOf="@+id/spell1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Some description"
+        android:id="@+id/description"
+        android:layout_below="@+id/summoner_name"
+        android:layout_toRightOf="@+id/champion_logo"
+        android:layout_toLeftOf="@+id/spell1"
+        android:layout_toStartOf="@+id/spell1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Long description of weaknesses"
+        android:id="@+id/long_description"
+        android:layout_below="@+id/description"
+        android:layout_toRightOf="@+id/champion_logo"
+        android:layout_alignBottom="@+id/champion_logo"
+        android:layout_toLeftOf="@+id/spell2"
+        android:layout_toStartOf="@+id/spell2" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/spell1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/spell2"
+        android:layout_below="@+id/spell1"
+        android:layout_alignLeft="@+id/spell1"
+        android:layout_alignStart="@+id/spell1"
+        android:layout_alignRight="@+id/spell1"
+        android:layout_alignEnd="@+id/spell1" />
+</RelativeLayout>
